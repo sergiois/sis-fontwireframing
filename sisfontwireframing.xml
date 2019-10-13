@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="system" method="upgrade">
+	<name>plg_system_sisfontwireframing</name>
+	<creationDate>October 2019</creationDate>
+	<copyright>(C) 2019 Sergio Iglesias. All rights reserved.</copyright>
+	<author>Sergio Iglesias</author>
+	<authorEmail>info@sergioiglesias.net</authorEmail>
+	<authorUrl>https://sergioiglesias.net</authorUrl>
+	<license>GNU General Public License v2.0</license>
+	<version>1.0.0</version>
+	<description>PLG_SYSTEM_SISFONTWIREFRAMING_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="sisfontwireframing">sisfontwireframing.php</filename>
+		<filename>index.html</filename>
+		<folder>fonts</folder>
+	</files>
+	<languages folder="language">plg_system_sisfontwireframing
+		<language tag="en-GB">en-GB/en-GB.plg_system_sisfontwireframing.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_sisfontwireframing.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_sisfontwireframing.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_system_sisfontwireframing.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="fontselected" type="list" description="PLG_SYSTEM_SISFONTWIREFRAMING_SELECT_FONT_DESC	" label="PLG_SYSTEM_SISFONTWIREFRAMING_SELECT_FONT_LABEL">
+					<option value="blokk">Blokk</option>
+					<option value="redacted">Redacted</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension" name="SIS FontWireframing">https://sergiois.github.io/sis-fontwireframing.xml</server>
+	</updateservers>
+</extension>
